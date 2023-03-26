@@ -1,9 +1,10 @@
+import main from './sass/main.scss'
+
 function App(){
     return (
-        <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">Ramón Sebastián Luna</a>.
-        </div>
+        <>
+        <a href="">Click here</a>
+        </>
     )
 }
 
