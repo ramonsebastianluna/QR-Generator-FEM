@@ -1,10 +1,29 @@
-import main from './sass/main.scss'
+import { useState } from "react";
+import QRCode from "react-qr-code";
 
 function App(){
+    const [url, setUrl] = useState("Tomá por curioso");
+
+    const generarQR = (event) => {
+        event.preventDefault();
+        setUrl(event.target.url.value);
+        event.target.url.value = "";
+    }
+
     return (
-        <>
-        <a href="">Click here</a>
-        </>
+        <form className="container" onSubmit={(event) => {generarQR(event)}}>
+            <div className="container__qr">
+                <QRCode value={url}></QRCode>  
+            </div>
+            <div className="container__input">
+                <h1>Add your url to convert it to qr code</h1>
+                <input name="url" placeholder="Your URL here!" required/>
+                <button type="submit">Make QR</button>
+            </div>
+            <div className="container__text">
+                <p>Scan the QR code to visit your website</p>
+            </div>
+        </form>
     )
 }
 

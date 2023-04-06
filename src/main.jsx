@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import main from "./sass/main.scss"
 import App from './App'
 
 
