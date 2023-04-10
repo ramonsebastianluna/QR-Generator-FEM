@@ -13,7 +13,14 @@ function App(){
     return (
         <form className="container" onSubmit={(event) => {generarQR(event)}}>
             <div className="container__qr">
-                <QRCode value={url}></QRCode>  
+                <div className="qr__circle-1"></div>
+                <QRCode 
+                    value={url}
+                    style={{ height: "160px", width: "160px", zIndex: "1"}}
+                    bgColor= "transparent"
+                    fgColor= "#FFFFFF"
+                /> 
+                <div className="qr__circle-2"></div> 
             </div>
             <div className="container__input">
                 <h1>Add your url to convert it to qr code</h1>

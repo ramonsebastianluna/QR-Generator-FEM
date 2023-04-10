@@ -1,14 +1,82 @@
 .container {
-    width: 400px;
-    height: 600px;
+    width: 320px;
+    height: 500px;
     background-color: $White;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    border-radius: 20px;
     .container__qr {
-        width: 400px;
-        height: 400px;
-        background-color: blue;
+        width: 90%;
+        height: 288px;
+        border-radius: 20px;
+        background-color: $Bg-qr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        .qr__circle-1 {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: $Circle;
+            position: absolute;
+            top: -138px;
+            left: -120px;
+        }
+        .qr__circle-2 {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: $Circle;
+            position: absolute;
+            top: 202px;
+            left: 122px;
+        }
+    }
+    .container__input {
+        text-align: center;
+        h1 {
+            font-family: $Outfit-font;
+            font-size: 20px;
+            font-weight: 800;
+            color: $Dark-blue;
+            padding: 0px 30px;
+        }
+        input {
+            padding: 5px;
+            margin: 10px;
+            font-family: $Outfit-font;
+            font-size: 12px;
+            outline: 1px solid $Grayish-blue;
+            border: none;
+            border-radius: 5px;
+            &::placeholder {
+                font-family: $Outfit-font;
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+        button {
+            font-family: $Outfit-font;
+            font-size: 13px;
+            padding: 6px 7px;
+            background-color: $Circle;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            &:hover {
+                background-color: $BG-button-hover;
+            }
+        }
+    }
+    .container__text {
+        font-family: $Outfit-font;
+        font-size: 16px;
+        font-weight: bold;
+        color: $Grayish-blue;
+        text-align: center;
     }
 }
