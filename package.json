@@ -1,15 +1,14 @@
 {
-  "name": "contadorreact",
+  "name": "QR-Generator-FEM",
   "private": true,
   "homepage": "https://ramonsebastianluna.github.io/QR-Generator-FEM/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",

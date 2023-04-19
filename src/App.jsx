@@ -2,7 +2,7 @@ import { useState } from "react";
 import QRCode from "react-qr-code";
 
 function App(){
-    const [url, setUrl] = useState("Tomá por curioso");
+    const [url, setUrl] = useState("");
 
     const generarQR = (event) => {
         event.preventDefault();
